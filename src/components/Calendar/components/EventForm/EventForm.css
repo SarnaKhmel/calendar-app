@@ -1,0 +1,84 @@
+.event-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.event-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #4a69bd;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    pointer-events: auto;
+}
+
+.form-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    color: #999;
+}
+
+.event-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.event-form .cancel-button,
+.event-form .save-button {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.event-form .cancel-button {
+    color: #ff6b6b;
+}
+
+.event-form .save-button {
+    color: #4a69bd;
+}
+
+.event-form .cancel-button:hover,
+.event-form .save-button:hover {
+    opacity: 0.8;
+}

@@ -1,4 +1,3 @@
-// src/components/NotFound/NotFound.tsx
 import React from 'react';
 import './NotFound.css';
 
